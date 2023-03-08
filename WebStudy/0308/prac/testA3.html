@@ -7,8 +7,8 @@
         fieldset { margin-bottom:15px; }
         legend { font-weight:bold; }
         ul.show{list-style-type: square;}
-		ul.noshow {list-style-type: none;}
-		li { line-height:30px;}
+		    ul.noshow {list-style-type: none;}
+		    li { line-height:30px;}
     </style>
   </head>
   <body>
@@ -32,21 +32,21 @@
       </li>
     </ul> 
     <hr>
-    <form action="#">
+    <form action="#" method="get">
     <b>개인정보</b>
-      <p style="padding: 10px">
-          이름:<input type="text" name="name" placeholder="공백없이 입력하세요" required></br>
-          연락처:<input type="text" name="tel" required></br>
-          지원일자:<input type="date" name="ddate" required></br>
+      <p style="padding: 20px">
+          이름:<input type="text" id="nameLabel" name="name" placeholder="공백없이 입력하세요" required></br>
+          연락처:<input type="tel" id="telLabel" name="tel" required></br>
+          지원일자:<input type="date" id="dateLabel" name="ddate" required></br>
       </p>
     <b>지원 분야</b>
-    <p style="padding: 10px">
-        <input type="radio" name="part" value="one">웹 퍼블리싱<br>
-        <input type="radio" name="part" value="two">웹 어플리케이션 개발<br>
-        <input type="radio" name="part" value="three">개발 환경 개선<br>
+    <p style="padding: 20px">
+        <input type="radio" name="part" value="webPublishing">웹 퍼블리싱<br>
+        <input type="radio" name="part" value="webApplicationDevelopment">웹 어플리케이션 개발<br>
+        <input type="radio" name="part" value="developmentEnvironmentRenew">개발 환경 개선<br>
     </p>  
     <b>지원 동기</b>
-    <p style="padding: 10px">
+    <p style="padding: 20px">
         <textarea name="lll" rows="10" cols="50" placeholder="본사 지원 동기를 간략히 써 주세요."></textarea>
     </p>
     <input type="submit" value="접수하기">
